@@ -26,15 +26,15 @@ export default class Cl_Asociacion{
     }
 
     totalBilletes5(): number{
-        return this.acBilletes5 + 5
+        return this.acBilletes5 + 5;
     }
 
     totalBilletes10(): number{
-        return this.acBilletes10 + 6
+        return this.acBilletes10 + 6;
     }
 
     totalBilletes20(): number{
-        return this.acBilletes20 + 5
+        return this.acBilletes20 + 5;
     }
 
     totalBiletesDA(): number{
