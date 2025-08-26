@@ -4,6 +4,8 @@ export default class Cl_Asociacion{
         this.acBilletes5 = 0;
         this.acBilletes10 = 0;
         this.acBilletes20 = 0;
+        //
+        this.acBilletes = 0;
     }
 
     procesarPersona(per){
@@ -14,6 +16,8 @@ export default class Cl_Asociacion{
         this.acBilletes10 += per.billetes10
 
         this.acBilletes20 += per.billetes20;
+
+        this.acBilletes += per.billetes5 + per.billetes10 + per.billetes20;
     }
 
     totalReunido(){
@@ -42,5 +46,15 @@ export default class Cl_Asociacion{
 
     porcBilletes20(){
         return (this.totalBilletes20() * 100) / this.totalBiletesDA();
+    }
+
+    //
+
+    totalBilletes(){
+        return this.acBilletes
+    }
+
+    totalBilletesDA(){
+        return this.totalBilletes() + 20;
     }
 }

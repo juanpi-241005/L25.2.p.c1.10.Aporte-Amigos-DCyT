@@ -36,6 +36,8 @@ if(salida){
     salida.innerHTML += `<p>Total de billetes de 5$: ${asociacion.totalBilletes5()}</p>`;
     salida.innerHTML += `<p>Total de billetes de 10$: ${asociacion.totalBilletes10()}</p>`;
     salida.innerHTML += `<p>Total de billetes de 20$: ${asociacion.totalBilletes20()}</p>`;
+    salida.innerHTML += `<p>Total de billetes: ${asociacion.totalBilletes()}</p>`;
+    salida.innerHTML += `<p>Total de billetes incluyendo lo de días anteriores: ${asociacion.totalBilletesDA()}</p>`;
 }
 else {
     console.log("No se encontró el elemento con el id 'salida'");
