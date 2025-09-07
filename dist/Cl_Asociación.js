@@ -11,12 +11,12 @@ export default class Cl_Asociacion{
     procesarPersona(per){
         this.acMontoTotal += per.montoTotal();
 
-        this.acBilletes5 += per.billetes5
+        this.acBilletes5 += per.billetes5;
 
-        this.acBilletes10 += per.billetes10
+        this.acBilletes10 += per.billetes10;
 
         this.acBilletes20 += per.billetes20;
-
+        
         this.acBilletes += per.billetes5 + per.billetes10 + per.billetes20;
     }
 
